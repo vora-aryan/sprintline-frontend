@@ -1,18 +1,19 @@
 const Navbar = () => {
   return (
-    <>
-      <nav className="h-10 flex items-center justify-center bg-gray-950 gap-4 text-2xl py-8">
-        <div className="bg-gray-100 px-4 rounded-2xl">
-          <button>Home</button>
+    <nav className="sticky top-0 z-50 h-20 w-full flex items-center bg-gray-950 text-2xl py-8 px-8 justify-between my-navbar">
+      <div className="text-amber-50 text-4xl px-4 rounded-2xl font-semibold">
+        <button className="cursor-pointer">Sprintline</button>
+      </div>
+      <div className="flex gap-4">
+        <div className="bg-gray-100 text-xl px-4 py-0.5 rounded-2xl">
+          Sign Up
         </div>
-        <div className="bg-gray-100 px-4 rounded-2xl">
-          <button>About</button>
+        <div className="bg-gray-100 text-xl px-4 py-0.5 rounded-2xl">
+          Contact Us
         </div>
-        <div className="bg-gray-100 px-4 rounded-2xl">
-          <button>Contact</button>
-        </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
+
 export default Navbar;
